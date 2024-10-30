@@ -17,3 +17,7 @@ git remote -v
 git push --set-upstream origin master 
 git push -u origin master
 git push origin 
+
+other notes:
+git tag -n (shows all tags)
+git push origin <tag name>
