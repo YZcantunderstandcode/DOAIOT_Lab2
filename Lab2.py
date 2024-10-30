@@ -56,6 +56,12 @@ def calc_median_temperature(list):
         median = list[len(list) // 2]
     print(f"Median temperature: {median}\n")
 
+def sort_temperature(list):
+    print("===============================")
+    print("sort temperature")
+    list.sort()
+    print(f"Sorted list: {list}\n")
+
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
     display_main_menu()
@@ -63,6 +69,7 @@ def main():
     calc_average_temperature(result_list)
     calc_min_max_temperature(result_list)
     calc_median_temperature(result_list)
+    sort_temperature(result_list)
 
 if __name__ == "__main__":
     main()
