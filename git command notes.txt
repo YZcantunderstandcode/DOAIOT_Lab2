@@ -1,0 +1,19 @@
+Working on the local repository
+
+git init 
+git status
+git add <filename>
+git commit -m "Message"
+git branch (check brances in the repo)
+git branch <branch name>
+git checkout/switch  {branch name}
+git merge <branch name> (from the main branch)
+git tag –a <tag> –m <comment>
+
+To send into github
+
+git remote add origin <https://github...>
+git remote -v 
+git push --set-upstream origin master 
+git push -u origin master
+git push origin 
