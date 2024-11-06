@@ -1,15 +1,29 @@
 def calculate_bmi(height, weight):
-    print("Height = " + str(height))
-    print("Weight = " + str(weight))
-    bmi = round(float(weight) / (float(height)) ** 2, 2)
-    print("BMI: ", bmi)
-    print("Weight Classification: ", end="")
+    height = float(height)
+    weight = float(weight)
+    print("Height =", height)
+    print("Weight =", weight)
+    
+    BMI = weight / (height ** 2)
+    print("Your BMI is =", round(BMI,2))
+    print ("Weight Classification:" ,end="")
 
-    if bmi < 18.5:
+
+    if BMI <18.5:
         print("Underweight")
-    elif 18.5 <= bmi < 24.9:
-        print("Normal weight")
-    elif bmi >  25.0:
-        print("Overweight")
+        return -1
+    
+    elif BMI >25.0:
+        print ("Overweight")
+        return 1
+    else:
+        print("Normal")
+        return 0
 
-calculate_bmi(weight=57, height=1.73)
+
+result = calculate_bmi(weight="57", height="1.73")
+result = calculate_bmi(weight="457", height="1.4")
+result = calculate_bmi(weight="57", height="1.90")
+
+
+

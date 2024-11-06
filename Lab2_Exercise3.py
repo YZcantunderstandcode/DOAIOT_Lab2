@@ -21,19 +21,11 @@ def get_user_input():
     return floatlist
 
 
-def calc_average(input_list):
+def cal_average(input_list):
     print ("cal_average")
-    total= sum(input_list)
-    average=total/len(input_list)
-    print ("Average = ", average)
-    return average 
 
 def find_min_max(input_list):
     print ("find_min_max")
-    input_list.sort()
-    resultlist = [input_list[0], input_list[-1]]
-    print ("Minimum & Maximum list =" , resultlist)
-    return resultlist
 
 def sort_temperate(input_list):
     print ("sort_temperature")
@@ -45,8 +37,7 @@ def main ():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
     display_main_menu()
     floatlist = get_user_input()
-    calc_average(floatlist)
-    find_min_max(floatlist)
+
 
 
 if __name__=="__main__":
